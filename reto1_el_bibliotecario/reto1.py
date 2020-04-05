@@ -89,7 +89,7 @@ def cifrado_pal(word):
     cont = 0
     c_aux = 0
     while cont < len(aux):
-        if c_aux<5:
+        if c_aux<5: #Agrupamos los numeros de 5 en 5 si hay mas
             aux1.append(aux[cont])
             c_aux += 1
             cont += 1
