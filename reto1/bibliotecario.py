@@ -59,7 +59,7 @@ def suma_letras(numerosASCII):
 
 # ---------------------------------------------------------------------------------------------------------------------------
 # aplicarMod(numeros)
-# PRECONDICION:
+# PRECONDICION: Los elementos sean numeros y no caracteres
 # POSTCONDICION: Devuelve una lista con los elementos aplicados el módulo de 10
 def aplicarMod(numeros):
     aplic = []
@@ -67,9 +67,10 @@ def aplicarMod(numeros):
         aplic.append(num%10)
     
     return aplic
+    
 # ---------------------------------------------------------------------------------------------------------------------------
 # reducirNum(numeros)
-# PRECONDICION:
+# PRECONDICION: Los elementos sean numeros y no caracteres
 # POSTCONDICION: Nos devuelve una lista con los elementos reducidos segun el numero que sea, en el caso de 
 def reducirNum(numeros):
     reduccion = []
@@ -140,6 +141,8 @@ def resultado(agrupamientos):
     return "".join(str(_) for _ in moddieciseis)
 
 # ---------------------------------------------------------------------------------------------------------------------------
+# convertir_palabra(palabra)
+# POSTCONDICION: Nos devuelve la palabra cifrada segun quiere nuestro amigo el bibliotecario.
 
 def convertir_palabra(palabra):
     let = duplicar_letras(palabra)
